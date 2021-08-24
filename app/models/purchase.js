@@ -2,11 +2,6 @@ const mongoose = require('mongoose')
 
 const purchaseSchema = new mongoose.Schema(
   {
-    owner: {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: 'User',
-      required: true
-    },
     title: {
       type: String,
       required: true
@@ -17,6 +12,11 @@ const purchaseSchema = new mongoose.Schema(
     },
     price: {
       type: String,
+      required: true
+    },
+    owner: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'User',
       required: true
     },
     review: String
