@@ -62,7 +62,7 @@ router.post('/purchases', requireToken, (req, res, next) => {
   req.body.purchase.owner = req.user.id
 
   Purchase.create(req.body.purchase)
-  // respond to succesful `create` with status 201 and JSON of new "purchase"
+  // respond to successful `create` with status 201 and JSON of new "purchase"
     .then((purchase) => {
       res.status(201).json({ purchase: purchase.toObject() })
     })
