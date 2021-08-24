@@ -30,7 +30,7 @@ const router = express.Router()
 // INDEX
 // GET /purchases
 router.get('/purchases', requireToken, (req, res, next) => {
-  Purchase.find()
+  Purchase.find({ owner: req.user.id })
     .then((purchases) => {
       // `purchases` will be an array of Mongoose documents
       // we want to convert each one to a POJO, so we use `.map` to
@@ -46,8 +46,9 @@ router.get('/purchases', requireToken, (req, res, next) => {
 // SHOW
 // GET /purchases/5a7db6c74d55bc51bdf39793
 router.get('/purchases/:id', requireToken, (req, res, next) => {
+  const id = req.params.id
   // req.params.id will be set based on the `:id` in the route
-  Purchase.findById(req.params.id)
+  Purchase.find({ owner: req.user.id, _id: id })
     .then(handle404)
   // if `findById` is successful, respond with 200 and "purchase" JSON
     .then((purchase) => res.status(200).json({ purchase: purchase.toObject() }))
