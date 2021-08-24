@@ -3,10 +3,7 @@ const express = require('express')
 // Passport docs: http://www.passportjs.org/docs/
 const passport = require('passport')
 const movies = require('../data/movies')
-const customErrors = require('../../lib/custom_errors')
 
-// we'll use this function to send 404 when non-existent document is requested
-const handle404 = customErrors.handle404
 const requireToken = passport.authenticate('bearer', { session: false })
 const router = express.Router()
 
