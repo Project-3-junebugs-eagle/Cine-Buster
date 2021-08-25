@@ -51,7 +51,7 @@ router.get('/purchases/:id', requireToken, (req, res, next) => {
   Purchase.find({ owner: req.user.id, _id: id })
     .then(handle404)
   // if `findById` is successful, respond with 200 and "purchase" JSON
-    .then((purchase) => res.status(200).json({ purchase: purchase.toObject() }))
+    .then((purchase) => res.status(200).json({ purchase: purchase }))
   // if an error occurs, pass it to the handler
     .catch(next)
 })
