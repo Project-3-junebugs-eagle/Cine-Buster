@@ -6,6 +6,8 @@ const cors = require('cors')
 // require route files
 const exampleRoutes = require('./app/routes/example_routes')
 const userRoutes = require('./app/routes/user_routes')
+const movieRoutes = require('./app/routes/movie_routes')
+const purchasesRoutes = require('./app/routes/purchase_routes')
 
 // require middleware
 const errorHandler = require('./lib/error_handler')
@@ -58,6 +60,8 @@ app.use(requestLogger)
 // register route files
 app.use(exampleRoutes)
 app.use(userRoutes)
+app.use(movieRoutes)
+app.use(purchasesRoutes)
 
 // register error handling middleware
 // note that this comes after the route middlewares, because it needs to be
@@ -69,5 +73,32 @@ app.listen(port, () => {
   console.log('listening on port ' + port)
 })
 
+const bodyParser = require('body-parser')
+
+const CORS_WHITELIST = require('./constants/frontend')
+
+const corsOptions = {
+  origin: (origin, callback) =>
+    (CORS_WHITELIST.indexOf(origin) !== -1)
+      ? callback(null, true)
+      : callback(new Error('Not allowed by CORS'))
+}
+
+const configureServer = app => {
+  app.use(cors(corsOptions))
+
+  app.use(bodyParser.json())
+}
+
+const paymentApi = require('./stripe-routes/payment')
+
+const configureRoutes = app => {
+  paymentApi(app)
+}
+
 // needed for testing
-module.exports = app
+module.exports = {
+  app,
+  configureServer,
+  configureRoutes
+}
