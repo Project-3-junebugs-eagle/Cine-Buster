@@ -1,10 +1,7 @@
 // Express docs: http://expressjs.com/en/api.html
 const express = require('express')
-// Passport docs: http://www.passportjs.org/docs/
-const passport = require('passport')
 const movies = require('../data/movies')
 
-const requireToken = passport.authenticate('bearer', { session: false })
 const router = express.Router()
 
 // router.get('/movies', requireToken, (req, res, next) => {
@@ -21,7 +18,7 @@ const router = express.Router()
 //     .catch(next)
 // })
 
-router.get('/movies', requireToken, (req, res, next) => {
+router.get('/movies', (req, res, next) => {
   res.status(200).json({ movies: movies })
 })
 
