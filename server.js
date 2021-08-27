@@ -94,13 +94,19 @@ const configureServer = app => {
 
 const paymentApi = require('./stripe-routes/payment')
 
-const configureRoutes = app => {
-  paymentApi(app)
+const path = require('path')
+app.use(paymentApi)
+
+const SERVER_PORT = 4741
+
+const SERVER_CONFIGS = {
+  PRODUCTION: process.env.NODE_ENV === 'production',
+  PORT: process.env.PORT || SERVER_PORT
 }
 
-// needed for testing
+module.exports = SERVER_CONFIGS
+
 module.exports = {
   app,
-  configureServer,
-  configureRoutes
+  configureServer
 }
