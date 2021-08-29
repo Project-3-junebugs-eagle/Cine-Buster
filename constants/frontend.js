@@ -1,7 +1,7 @@
-const FRONTEND_DEV_URLS = [ 'http://localhost:7165' ]
+const FRONTEND_DEV_URLS = ['https://secure-taiga-59525.herokuapp.com/']
 
 const FRONTEND_PROD_URLS = [
-  'https://www.yourdomain.com',
+  'https://secure-taiga-59525.herokuapp.com/',
   'https://localhost:7165'
 ]
 
