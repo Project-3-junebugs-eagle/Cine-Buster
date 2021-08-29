@@ -1,8 +1,7 @@
-const FRONTEND_DEV_URLS = ['https://secure-taiga-59525.herokuapp.com/']
+const FRONTEND_DEV_URLS = ['https://localhost:7165']
 
 const FRONTEND_PROD_URLS = [
-  'https://project-3-junebugs-eagle.github.io/project-3-client',
-  'https://localhost:7165'
+  'https://project-3-junebugs-eagle.github.io/project-3-client'
 ]
 
 module.exports = process.env.NODE_ENV === 'production'
