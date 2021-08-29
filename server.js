@@ -94,7 +94,7 @@ const configureServer = app => {
 
 const paymentApi = require('./stripe-routes/payment')
 
-const path = require('path')
+// const path = require('path')
 app.use(paymentApi)
 
 const SERVER_PORT = 4741
