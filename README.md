@@ -29,11 +29,11 @@ BACK END:
 ## Deployed sites
 
 [Front end](https://project-3-junebugs-eagle.github.io/project-3-client/)
-[Back end - Heroku]() 
+[Back end - Heroku](https://git.heroku.com/secure-taiga-59525.git) 
 
 ## Back end repo link
 
-[Back end repo]()
+[Back end repo](https://github.com/Project-3-junebugs-eagle/Cine-Buster)
 
 ## ENTITY RELATIONSHIP DIAGRAM
 
@@ -41,9 +41,18 @@ BACK END:
 
 ## Routes the API expects
 
+Our API expects the route for our cart to be /carts
+
+Movies only has a get route which displays as /movies
+
+Purchases has the full range of CRUD routes, the API expects get and post to display as /purchases, and update and delete to display as /purchases/:id
 
 ### Problems to be solved
 
+1. Movie pictures are only being displayed in 'Home'. For future iterations, we want to display the pictures in the cart and 'My purchases' so users can see them there as well.
+2. Fix the positioning of the buttons and price in the movie cards.
+3. Center the 'Pay with card' button in 'My cart' and change the color/styling so it looks like the other ones.
+4. Make color scheme more uniform.
 
 ### Planning, process, problem solving
 
