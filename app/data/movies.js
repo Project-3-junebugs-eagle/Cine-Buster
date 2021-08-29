@@ -1,19 +1,19 @@
 /* eslint-disable no-tabs */
 const movies = [
   {
-    id: '1234',
-    title: 'Fast and Furious',
+    id: '2728',
+    title: 'Me Before You',
     description:
-			'Media franchise centered on a series of action films that are largely concerned with illegal street racing, heists, spies and betrayal.',
-    price: '4.99',
+			'Louisa Clark is an ordinary girl living an ordinary life —steady boyfriend, close family—who has barely been farther afield than their tiny village. She takes a badly needed job working for Will Traynor, who is wheelchair bound after an accident.',
+    price: '5.99',
     imgUrl:
-			'https://c4.wallpaperflare.com/wallpaper/274/611/598/2020-the-fast-and-the-furious-9-fast-and-furious-9-fast-and-furious-9-hd-wallpaper-preview.jpg'
+			'https://c4.wallpaperflare.com/wallpaper/252/803/700/sam-claflin-me-before-you-emilia-clarke-4k-wallpaper-preview.jpg'
   },
   {
     id: '6789',
     title: 'Fantastic Mr Fox',
     description:
-			'After 12 years of bucolic bliss, Mr. Fox (George Clooney) breaks a promise to his wife (Meryl Streep) and raids the farms of their human neighbors, Boggis, Bunce and Bean.',
+			'After 12 years of bucolic bliss, Mr. Fox breaks a promise to his wife and raids the farms of their human neighbors. Mr Fox is far too clever for his local farmers, Boggis, Bunce and Bean. Still, even a clever and cunning fox sometimes gets caught out.',
     price: '4.99',
     imgUrl:
 			'https://c4.wallpaperflare.com/wallpaper/590/157/286/movie-fantastic-mr-fox-wallpaper-preview.jpg'
@@ -22,19 +22,19 @@ const movies = [
     id: '1011',
     title: 'Interstellar',
     description:
-			"Interstellar is about Earth's last chance to find a habitable planet before a lack of resources causes the human race to go extinct.",
+			'Interstellar is an epic science fiction drama film. Set in a dystopian future where humanity is struggling to survive, the film follows a group of astronauts who travel through a wormhole near Saturn in search of a new home for humanity.',
     price: '4.99',
     imgUrl:
 			'https://c4.wallpaperflare.com/wallpaper/1023/915/631/nasa-space-suit-digital-art-space-wallpaper-preview.jpg'
   },
   {
-    id: '1213',
-    title: 'The Adventures of Robin Hood',
+    id: '2021',
+    title: 'The Little Mermaid',
     description:
-			"Arguably Flynn's greatest role, this is the classic, swashbuckling, adventure, costume epic spectacle about the infamous rebel outlaw and his band of merry men from Sherwood Forest who robbed from the rich and gave to the poor.",
+			'The film tells the story of a mermaid princess named Ariel, who dreams of becoming human and falls in love with a human prince named Eric, which leads her to make a magic deal with the sea witch, Ursula, to become human and be with him.',
     price: '5.99',
     imgUrl:
-			'https://c4.wallpaperflare.com/wallpaper/761/793/95/action-adventure-archer-battle-wallpaper-preview.jpg'
+			'https://c4.wallpaperflare.com/wallpaper/619/508/1017/1littlemermaid-adventure-animation-ariel-wallpaper-preview.jpg'
   },
   {
     id: '1415',
@@ -64,13 +64,13 @@ const movies = [
 			'https://c4.wallpaperflare.com/wallpaper/595/534/446/movie-frozen-2-anna-frozen-elsa-frozen-kristoff-frozen-hd-wallpaper-preview.jpg'
   },
   {
-    id: '2021',
-    title: 'The Little Mermaid',
+    id: '1213',
+    title: 'The Adventures of Robin Hood',
     description:
-			'The film tells the story of a mermaid princess named Ariel, who dreams of becoming human and falls in love with a human prince named Eric, which leads her to make a magic deal with the sea witch, Ursula, to become human and be with him.',
+			"Arguably Flynn's greatest role, this is the classic, swashbuckling, adventure, costume epic spectacle about the infamous rebel outlaw and his band of merry men from Sherwood Forest who robbed from the rich and gave to the poor.",
     price: '5.99',
     imgUrl:
-			'https://c4.wallpaperflare.com/wallpaper/619/508/1017/1littlemermaid-adventure-animation-ariel-wallpaper-preview.jpg'
+			'https://c4.wallpaperflare.com/wallpaper/761/793/95/action-adventure-archer-battle-wallpaper-preview.jpg'
   },
   {
     id: '2122',
@@ -118,19 +118,19 @@ const movies = [
 			'https://c4.wallpaperflare.com/wallpaper/12/480/915/movies-pirates-of-the-caribbean-the-curse-of-the-black-pearl-keira-knightley-johnny-depp-wallpaper-preview.jpg'
   },
   {
-    id: '2728',
-    title: 'Me Before You',
+    id: '1234',
+    title: 'Fast and Furious',
     description:
-			'A girl in a small town forms an unlikely bond with a recently-paralyzed man she is taking care of.',
-    price: '5.99',
+			'Media franchise centered on a series of action films that are largely concerned with illegal street racing, heists, spies and betrayal.',
+    price: '4.99',
     imgUrl:
-			'https://c4.wallpaperflare.com/wallpaper/252/803/700/sam-claflin-me-before-you-emilia-clarke-4k-wallpaper-preview.jpg'
+			'https://c4.wallpaperflare.com/wallpaper/274/611/598/2020-the-fast-and-the-furious-9-fast-and-furious-9-fast-and-furious-9-hd-wallpaper-preview.jpg'
   },
   {
     id: '2829',
     title: 'Twilight',
     description:
-			'This film focuses on the development of the relationship between Bella Swan (a teenage girl) and Edward Cullen (a vampire), and the subsequent efforts of Edward and his family to keep Bella safe from a coven of evil vampires.',
+			'This film focuses on the development of the relationship between Bella Swan (a teenage girl) and Edward Cullen (a vampire), and the subsequent efforts of Edward and his family to keep Bella safe.',
     price: '5.99',
     imgUrl:
 			'https://c4.wallpaperflare.com/wallpaper/517/908/1007/actors-twilight-twilight-robert-wallpaper-preview.jpg'
@@ -139,7 +139,7 @@ const movies = [
     id: '3031',
     title: 'The Guernsey Literary and Potato Peel Pie Society',
     description:
-			'In 1946 a London-based writer begins exchanging letters with residents on the island of Guernsey, which was German-occupied during WWII. Feeling compelled to visit the island, she starts to get a picture of what it was like during the occupation.',
+			'A writer begins exchanging letters with residents on the island of Guernsey, which was German-occupied during WWII. Feeling compelled to visit the island, she starts to get a picture of what it was like during the occupation.',
     price: '5.99',
     imgUrl:
 			'https://c4.wallpaperflare.com/wallpaper/205/520/61/lily-james-in-the-guernsey-literary-and-potato-peel-pie-society-wallpaper-preview.jpg'
@@ -148,7 +148,7 @@ const movies = [
     id: '3132',
     title: 'Avatar',
     description:
-			'A paraplegic Marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.',
+			'After his brother is killed, a paraplegic Marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.',
     price: '5.99',
     imgUrl:
 			'https://c4.wallpaperflare.com/wallpaper/123/991/646/avatar-blue-skin-james-cameron-s-movie-avatar-movie-poster-wallpaper-preview.jpg'
@@ -166,7 +166,7 @@ const movies = [
     id: '3334',
     title: 'Casino Royale',
     description:
-			'After earning 00 status and a licence to kill, Secret Agent James Bond sets out on his first mission as 007. Bond must defeat a private banker funding terrorists in a high-stakes game of poker at Casino Royale, Montenegro. James Bond (Daniel Craig) goes on his first mission as a 00.',
+			'After earning 00 status and a licence to kill, Secret Agent James Bond sets out on his first mission as 007. Bond must defeat a private banker funding terrorists in a game of poker at Casino Royale.',
     price: '5.99',
     imgUrl:
 			'https://c4.wallpaperflare.com/wallpaper/81/961/318/movies-james-bond-casino-royale-daniel-craig-wallpaper-preview.jpg'
@@ -175,7 +175,7 @@ const movies = [
     id: '3536',
     title: 'Zero Dark Thirty',
     description:
-			'Zero Dark Thirty is a 2012 American thriller film directed by Kathryn Bigelow and written by Mark Boal. The film dramatizes the nearly decade-long international manhunt for Osama bin Laden, leader of terrorist network Al-Qaeda, after the September 11 attacks.',
+			'Zero Dark Thirty is a 2012 American thriller film directed by Kathryn Bigelow and written by Mark Boal. The film dramatizes the nearly decade-long international manhunt for Osama bin Laden.',
     price: '5.99',
     imgUrl:
 			'https://c4.wallpaperflare.com/wallpaper/613/787/800/movie-zero-dark-thirty-jessica-chastain-wallpaper-preview.jpg'
