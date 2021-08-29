@@ -28,12 +28,15 @@ BACK END:
 
 ## Deployed sites
 
-[Front end](https://project-3-junebugs-eagle.github.io/project-3-client/)
+[Front end deployed](https://project-3-junebugs-eagle.github.io/project-3-client/)
+
 [Back end - Heroku](https://git.heroku.com/secure-taiga-59525.git) 
 
 ## Back end repo link
 
 [Back end repo](https://github.com/Project-3-junebugs-eagle/Cine-Buster)
+
+[Front end repo](https://github.com/Project-3-junebugs-eagle/project-3-client)
 
 ## ENTITY RELATIONSHIP DIAGRAM
 
@@ -57,7 +60,9 @@ Purchases has the full range of CRUD routes, the API expects get and post to dis
 ### Planning, process, problem solving
 
 [Suggested Schedule part 1](https://imgur.com/3B4anof)
+
 [Suggested Schedule part 2](https://imgur.com/pPYFWCA)
+
 [Daily Stand Up Plan](https://imgur.com/h1GQx9o)
 
 As a team, we planned what our project would be by brainstorming our individual ideas until we made a decision. Once we had the general idea of what we wanted to do, we created our user stories, wireframe and ERD. 
